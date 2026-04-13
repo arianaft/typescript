@@ -47,7 +47,7 @@ export function generarReporte(estado: EstadoMatricula): string {
       return `Nota media: ${estado.notaMedia}`;
 
     default:
-      const _exhaustivo: never = estado;
-      return _exhaustivo;
+    const _exhaustivo: never = estado;
+    throw new Error("Estado no manejado");
   }
 }
